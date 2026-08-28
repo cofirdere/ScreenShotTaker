@@ -1,20 +1,51 @@
-Java
-
-import java.util.Scanner;
-
-public class AgeCheck {
+//NOTE: made by Cofirdere, Date of creation:2/28/26
+import java.awt.*;
+import java.awt.image.*;
+import java.io.*;
+import javax.imageio.*;
+public class MyFirstAutomationWithJava {
+    private static final Color TEXT_COLOR=Color.WHITE;
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        //IMPORTANT NOTICE!
+        /* I am a bare beginner, I am a programming newbie, I dont know about all these initially as said by the file name! 
+        dont ask for hard updates cuz I am still an beginner learning Java programming! It's just my first year or just months
+        I want explanations of: Robot class, the entire awt pack, ImageIO.write() function, how it works!      
+        */
+     try {
+        //initialize the robot!
+        Robot robot= new Robot();
+        robot.setAutoDelay(0);
 
-        System.out.print("Enter your age: ");
-        int age = input.nextInt();
+        
+        //get the screen size
+        Dimension screenSize=Toolkit.getDefaultToolkit().getScreenSize();  //get the length breath of the default monitor screen size
+        Rectangle screenRectangle=new Rectangle(screenSize);
+        //to have the rectangle of it
 
-        if (age > 10) {
-            System.out.println("OK");
-        } else {
-            System.out.println("Not OK");
+        //capture photo first
+        BufferedImage bufferedImage=robot.createScreenCapture(screenRectangle);
+
+        // String picString=System.getProperty("user.home")+"\\Pictures\\Screenshots";
+        //to the system paths of all OS        
+        String picString=System.getProperty("user.home") + "/Pictures/Screenshots"; 
+
+
+        File directory=new File(picString);  
+        if (!directory.exists()) {  
+            directory.mkdirs();
         }
 
-        input.close();
+        //generate a new filename using timestamp (I want explaination)
+        String timeString="Screenshot_" + System.currentTimeMillis() + ".jpg";
+        File systemFile=new File(directory, timeString);
+        ImageIO.write(bufferedImage, "jpg", systemFile);     //so its this [the one that stores the pixels, the format, and the output stream]
+    }    
+    catch (Exception e) {
+     e.printStackTrace();
     }
+ }
+private static void GUImaker(Color TEXT_COLOR) {
+JFrame frame=new JFrame();
+
+}
 }
