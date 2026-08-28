@@ -4,6 +4,7 @@ import java.io.*;
 import javax.imageio.*;
 import javax.swing.BoxLayout;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 public class MyFirstAutomationWithJava {
     private static final Color TEXT_COLOR=Color.WHITE;
@@ -56,7 +57,6 @@ private static void MakeGUIWarning() {
     JPanel pannel=new Jpanel();
     pannel.setLayout(Jpanel, new BoxLayout(pannel, box.Y_AXIS));
     pannel.setBorder(BorderFactory.createEmptyBorder(12,12,12,12));
-    pannel.setBackground(new Color(100,100,100));
-
+    pannel.setBackground(new Color(0,0,0));
 }
 }
