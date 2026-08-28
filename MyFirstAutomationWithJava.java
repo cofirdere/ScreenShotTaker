@@ -7,7 +7,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 public class MyFirstAutomationWithJava {
-    private static final Color TEXT_COLOR=Color.WHITE;
     public static void main(String[] args) {
         //IMPORTANT NOTICE!
         /* I am a bare beginner, I am a Beginner, I dont know about all these initially as said by the file name! 
