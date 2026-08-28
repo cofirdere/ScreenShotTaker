@@ -44,8 +44,4 @@ public class MyFirstAutomationWithJava {
      e.printStackTrace();
     }
  }
-private static void GUImaker(Color TEXT_COLOR) {
-JFrame frame=new JFrame();
-
-}
 }
