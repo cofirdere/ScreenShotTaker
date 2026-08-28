@@ -47,16 +47,4 @@ public class MyFirstAutomationWithJava {
      e.printStackTrace();
     }
  }
-private static void MakeGUIWarning() {
-    JFrame frame=new JFrame();
-    frame.setAlwaysOnTop(true);
-    frame.setDefaultCloseOperationI(JFrame.EXIT_ON_CLOSE);
-    frame.setLocationRelativeTo(null);
-    frame.setSize(300,300);
-
-    JPanel pannel=new Jpanel();
-    pannel.setLayout(Jpanel, new BoxLayout(pannel, box.Y_AXIS));
-    pannel.setBorder(BorderFactory.createEmptyBorder(12,12,12,12));
-    pannel.setBackground(new Color(0,0,0));
-}
 }
