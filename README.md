@@ -1,4 +1,6 @@
 It is a simple script on Java to take screenshots
+
+
 Name: Cofiredere
 Date of Creation: 8/28/26
 This code is made by a beginner(Cofiredere) who just made this account.
