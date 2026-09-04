@@ -6,19 +6,13 @@ import javax.swing.BoxLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-public class MyFirstAutomationWithJava {
+public class javaScreenShotTaker {
     public static void main(String[] args) {
-        //IMPORTANT NOTICE!
-        /* I am a bare beginner, I am a Beginner, I dont know about all these initially as said by the file name! 
-        dont ask for hard updates cuz I am still an beginner learning Java programming! It's just my first year or just months
-        I want explanations of: Robot class, the entire awt pack, ImageIO.write() function, how it works!      
-        */
      try {
         //initialize the robot!
         Robot robot= new Robot();
         robot.setAutoDelay(0);
-        MakeGUIWarning();
-        
+                
         //get the screen size
         Dimension screenSize=Toolkit.getDefaultToolkit().getScreenSize();  //get the length breath of the default monitor screen size
         Rectangle screenRectangle=new Rectangle(screenSize);
