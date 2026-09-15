@@ -1,0 +1,44 @@
+import java.awt.*;
+import java.awt.image.*;
+import java.io.*;
+import javax.imageio.*;
+public class javaScreenShotTaker {
+    public static void main(String[] args) {
+      CaptureScreenShot();
+ }
+ private static void CaptureScreenShot(){
+ try {
+        //initialize the robot!
+        Robot robot= new Robot();
+        robot.setAutoDelay(0);
+        MakeGUIWarning();
+        
+                
+        //get the screen size
+        Dimension screenSize=Toolkit.getDefaultToolkit().getScreenSize();  //get the length breath of the default monitor screen size
+        Rectangle screenRectangle=new Rectangle(screenSize);
+        //to have the rectangle of it
+
+        //capture photo first
+        BufferedImage bufferedImage=robot.createScreenCapture(screenRectangle);
+
+
+        //to the system paths of all OS        
+        String picString=System.getProperty("user.home") + "/Pictures/Screenshots"; 
+
+
+        File directory=new File(picString);  
+        if (!directory.exists()) {  
+            directory.mkdirs();
+        }
+
+        //This generates the name of the screenshot file with a timestamp to ensure uniqueness. The file is saved in the specified directory in JPEG format. 
+        String timeString="Screenshot_" + System.currentTimeMillis() + ".jpg";
+        File systemFile=new File(directory, timeString);
+        ImageIO.write(bufferedImage, "jpg", systemFile);     
+    }    
+    catch (Exception e) {
+     e.printStackTrace();
+    }
+ }
+}
