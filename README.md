@@ -20,5 +20,7 @@ It is a simple script on Java to take screenshots
 #2.then stores the captured image to the respective file path; in this context, the default photos app on Windows.
 
 
+#the new file javaScreenShotTaker will be updated further
+
 
 #As told earlier, I am a beginner so don't ask for major updates.
