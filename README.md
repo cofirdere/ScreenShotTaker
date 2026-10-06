@@ -1,26 +1,14 @@
-It is a simple script on Java to take screenshots
+It is a simple script on Java to take screenshots on windows
 
+**This code does the following things:**
 
-#Name: Cofiredere
+1.Captures the Screenshot Using the "Robot" class from java.awt. package
 
+2.then stores the captured image to the respective file path; in this context, the default photos app on Windows.
 
-#Date of Creation: 8/28/26
+📑NOTE:
 
+The new file javaScreenShotTaker will be updated further. 
+And the previous file, **MyFirstAutomationWithJava will not get any future updates. It has been discontinued.**
 
-#This code is made by a beginner(Cofiredere) who just made this account.
-
-
-#This code does the following things:
-
-
-#1.Captures the Screenshot Using the "Robot" class from java.awt. package
-
-
-
-#2.then stores the captured image to the respective file path; in this context, the default photos app on Windows.
-
-
-#the new file javaScreenShotTaker will be updated further
-
-
-#As told earlier, I am a beginner so don't ask for major updates.
+**I am a beginner so don't ask for major updates. You can tell faults, errors and many more.*
